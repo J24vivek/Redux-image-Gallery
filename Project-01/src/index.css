@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.SearchBar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 40px;
+  background-color: #9d9d9e;
+  z-index: 100;
+}
+
+form {
+  width: 58%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 1px solid #4b4848;
+  outline: none;
+}
+
+.SearchBar form button {
+  background-color: #7c7e7d;
+  color: #070707;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.collection {
+  display: flex;
+  border: 1px solid #6d6c6c;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  gap: 10px;
+}
+
+.tabs {
+  position: fixed;
+  top: 70px;
+  background-color: white;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  z-index: 99;
+}
+
+.tabs h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.tabs button {
+  color: #070707;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0px 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs h1 {
+  border-bottom: 1px solid #070707;
+}
+
+.gif {
+  margin-top: 200px;
+}
+
+.result-grid {
+  width: 100%;
+  padding-left: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  margin-top: 145px;
+  padding-bottom: 50px;
+}
+
+.cards {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #5e5c5c;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  position: relative;
+}
+
+.cards .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 0px 0px 7px 7px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 7), rgba(0, 0, 0, 0));
+}
+
+.cards .title h1 {
+  width: 70%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cards .title button {
+  width: auto;
+  display: flex;
+  align-items: center;
+  background-color: #abcae4;
+  color: black;
+  border: 1px solid white;
+  padding: 2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cards .cardImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cardImg img,
+.cardImg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.CollectionPage {
+  width: 100%;
+  /* margin-left: 5%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: px;
+  padding-bottom: 50px;
+}
+
+/* Styles for CollectionPage (replaces Tailwind utilities) */
+.collection-page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9fafb;
+}
+
+.collection-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 7rem; /* space for fixed search bar */
+}
+
+.collection-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-right: 1%;
+}
+
+.collection-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  border-bottom: 2px solid #1f2937;
+}
+
+.clear-btn {
+  padding: 0.25rem 0.75rem;
+  background: #ef4444;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+.clear-btn:hover {
+  background: #dc2626;
+}
+
+.collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: start;
+}
